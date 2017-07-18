@@ -308,7 +308,7 @@ let s:windows_CFlags = 'gcc\ -fexec-charset=gbk\ -Wall\ -g\ -O0\ -c\ %\ -o\ %<.o
 let s:linux_CFlags = 'gcc\ -Wall\ -g\ -O0\ -c\ %\ -o\ %<.o'
 
 let s:windows_CPPFlags = 'g++\ -fexec-charset=gbk\ -Wall\ -g\ -O0\ -c\ %\ -o\ %<.o'
-let s:linux_CPPFlags = 'g++\ -Wall\ -g\ -O0\ -c\ %\ -o\ %<.o'
+let s:linux_CPPFlags = 'g++\ -Wall\ -std=c++11\ -g\ -O0\ -c\ %\ -o\ %<.o'
 
 let s:JavaFlags = 'javac\ %'
 
@@ -560,8 +560,8 @@ func SetTitle()
 	else 
 		call setline(1, "/*************************************************************************") 
 		call append(line("."), "	> File Name: ".expand("%")) 
-		call append(line(".")+1, "	> Author: Hou") 
-		call append(line(".")+2, "	> Mail: 745189913@qq.com") 
+		call append(line(".")+1, "	> Author: lin") 
+		call append(line(".")+2, "	> Mail: 455477402@qq.com") 
 		call append(line(".")+3, "	> Created Time: ".strftime("%c")) 
 		call append(line(".")+4, " ************************************************************************/") 
 		call append(line(".")+5, "")
